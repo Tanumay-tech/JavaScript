@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4: Palindrome Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header-card {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6f42c1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #59339d;
+        }
+        #result-box {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: none;
+        }
+        .stats {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+            text-align: right;
+        }
+        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .fail { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h2>Experiment 4: Functions, Scope & Closures</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 2nd Year, SIT Nagpur</p>
+    </div>
+
+    <h3>Palindrome Checker</h3>
+    <p>Enter a word or phrase to see if it reads the same backward as forward (ignores spaces and punctuation).</p>
+    
+    <input type="text" id="textInput" placeholder="e.g., Race car, Madam, 12321">
+    
+    <button onclick="handleCheck()">Check Palindrome</button>
+
+    <div id="result-box"></div>
+    <div class="stats" id="stats-box"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
