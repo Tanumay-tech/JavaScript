@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1: JS Basics</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .info-card {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <script>
+        function showWelcomeMessage() {
+            document.getElementById("welcome-msg").innerText = "Welcome to the JavaScript Lab Experiments!";
+            console.log("Internal JS executed: Welcome message updated.");
+        }
+    </script>
+</head>
+<body onload="showWelcomeMessage()">
+
+    <h1 id="welcome-msg">Loading...</h1>
+    
+    <div class="info-card">
+        <h2>Student Information</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee</p>
+        <p><strong>PRN:</strong> 24070521127</p>
+        <p><strong>Program:</strong> B.Tech Computer Science and Engineering (2nd Year)</p>
+        <p><strong>Institute:</strong> Symbiosis Institute of Technology (SIT), Nagpur</p>
+    </div>
+
+    <button onclick="alert('Inline JavaScript triggered! Hello, Tanumay.')">
+        Click for Inline JS
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
