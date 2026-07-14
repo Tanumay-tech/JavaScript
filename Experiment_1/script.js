@@ -16,7 +16,7 @@ console.error("This is an error message: Something went wrong (intentionally)!")
 const studentData = {
     Name: "Tanumay",
     Branch: "CSE",
-    Year: "2nd Year",
+    Year: "3rd Year",
     College: "SIT Nagpur"
 };
 console.log("Displaying user info in a table format:");
