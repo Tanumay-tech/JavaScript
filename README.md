@@ -14,7 +14,7 @@ This repository contains the bona fide practical work carried out for the JavaSc
 
 * **Name of Student:** Tanumay Chatterjee
 * **PRN:** 24070521127
-* **Program:** B.Tech Computer Science and Engineering (2nd Year)
+* **Program:** B.Tech Computer Science and Engineering (Honors in Data Science)
 * **Batch:** 2024-2028
 
 ## 📂 Index of Experiments
@@ -25,10 +25,10 @@ This repository contains the bona fide practical work carried out for the JavaSc
 | 2 | Use var, let, const, and demonstrate basic features like template literals and destructuring; build a billing calculator with user input. | 🟢 Completed | [View](./Experiment_2) |
 | 3 | Implement control structures and form validation; create a grading system based on user-entered marks. | 🟢 Completed | [View](./Experiment_3) |
 | 4 | Use function types, scope, and closures; apply try-catch; build a palindrome checker. | 🟢 Completed | [View](./Experiment_4) |
-| 5 | Apply array methods and object handling; create a cart total calculator with discount logic. | 🔴 Pending | [View](./Experiment_5) |
-| 6 | Use string functions and regex for email validation, data extraction, and text analysis. | 🔴 Pending | [View](./Experiment_6) |
-| 7 | Perform DOM traversal and updates; develop a to-do list app with add, edit, and delete features. | 🔴 Pending | [View](./Experiment_7) |
-| 8 | Access and validate form fields using events; design a gym admission form with live input checks. | 🔴 Pending | [View](./Experiment_8) |
+| 5 | Apply array methods and object handling; create a cart total calculator with discount logic. | 🟢 Completed | [View](./Experiment_5) |
+| 6 | Use string functions and regex for email validation, data extraction, and text analysis. | 🟢 Completed | [View](./Experiment_6) |
+| 7 | Perform DOM traversal and updates; develop a to-do list app with add, edit, and delete features. | 🟢 Completed | [View](./Experiment_7) |
+| 8 | Access and validate form fields using events; design a gym admission form with live dynamic country-based validation. | 🟢 Completed | [View](./Experiment_8) |
 | 9 | Implement localStorage and sessionStorage to save user preferences like theme settings. | 🔴 Pending | [View](./Experiment_9) |
 | 10 | Load and display JSON data using fetch() and jQuery $.getJSON(); render results dynamically in a table. | 🔴 Pending | [View](./Experiment_10) |
 | 11 (VA) | Use JavaScript timers (setTimeout(), setInterval()) and ES6 modules (import/export) to build a dynamic countdown or class scheduler with real-time updates and responsive layout. | 🔴 Pending | [View](./Experiment_11) |
@@ -38,8 +38,8 @@ This repository contains the bona fide practical work carried out for the JavaSc
 
 ## 🚀 How to Run the Code
 
-Most of the experiments in this repository are front-end focused and run directly in the browser. 
+Most of the experiments in this repository are front-end focused and run directly in the browser without needing a local server.
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/your-username/javascript-lab.git](https://github.com/your-username/javascript-lab.git)
+   git clone [https://github.com/Tanumay-tech/JavaScript.git](https://github.com/Tanumay-tech/JavaScript.git)
