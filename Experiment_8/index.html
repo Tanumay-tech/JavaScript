@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 8: Gym Form Validation</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; outline: none; }
+        .error-msg { color: #dc3545; font-size: 12px; display: none; margin-top: 5px; }
+        button { width: 100%; padding: 12px; background-color: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; margin-top: 10px; }
+        button:disabled { background-color: #e4a1a8; cursor: not-allowed; }
+        #successBox { margin-top: 20px; padding: 15px; border-radius: 5px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; display: none; text-align: center; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h2>Experiment 8: Events & Form Validation</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 3rd Year, SIT Nagpur</p>
+    </div>
+
+    <h3>Gym Admission Form</h3>
+    
+    <form id="gymForm">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name">
+            <div class="error-msg" id="nameError">Name must contain only letters and spaces (min 3 chars).</div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+            <div class="error-msg" id="ageError">Age must be between 16 and 100.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" placeholder="Enter your weight in kg">
+            <div class="error-msg" id="weightError">Weight must be between 30 and 300 kg.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="">-- Select your country --</option>
+                <option value="India">India</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="error-msg" id="countryError">Please select a country.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Select a country first..." disabled>
+            <div class="error-msg" id="phoneError">Please select a country to see the required format.</div>
+        </div>
+
+        <button type="submit" id="submitBtn" disabled>Submit Application</button>
+    </form>
+
+    <div id="successBox">Registration Successful! Welcome to the Gym.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
