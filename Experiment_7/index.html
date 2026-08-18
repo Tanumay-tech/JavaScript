@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 7: To-Do DOM App</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        input[type="text"] { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; color: white; }
+        .btn-add { background-color: #6f42c1; }
+        .btn-edit { background-color: #ffc107; color: black; margin-right: 5px; }
+        .btn-delete { background-color: #dc3545; }
+        ul { list-style-type: none; padding: 0; }
+        li { background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+        .task-text { flex: 1; margin-right: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h2>Experiment 7: DOM Traversal</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 2nd Year, SIT Nagpur</p>
+    </div>
+
+    <h3>Interactive To-Do List</h3>
+    
+    <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button class="btn-add" onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
