@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 5: Cart Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        input, select { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 10px; }
+        .btn-calc { background-color: #007bff; }
+        ul { list-style-type: none; padding: 0; }
+        li { background: #f8f9fa; padding: 10px; margin-bottom: 5px; border: 1px solid #ddd; border-radius: 4px; display: flex; justify-content: space-between; }
+        #summary { margin-top: 20px; padding: 15px; border-radius: 5px; background-color: #e2e3e5; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h2>Experiment 5: Arrays & Objects</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 3rd Year, SIT Nagpur</p>
+    </div>
+
+    <h3>Shopping Cart Calculator</h3>
+    
+    <input type="text" id="itemName" placeholder="Item Name">
+    <input type="number" id="itemPrice" placeholder="Item Price (₹)">
+    <button onclick="addToCart()">Add to Cart</button>
+
+    <ul id="cartList"></ul>
+
+    <input type="text" id="discountCode" placeholder="Discount Code (e.g., SAVE10, SAVE20)">
+    <button class="btn-calc" onclick="calculateTotal()">Calculate Total</button>
+
+    <div id="summary" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
