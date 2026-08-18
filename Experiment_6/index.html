@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 6: Strings & Regex</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit; }
+        button { width: 100%; padding: 12px; background-color: #17a2b8; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        #results { margin-top: 20px; padding: 15px; border-radius: 5px; background-color: #f8f9fa; display: none; line-height: 1.6; border: 1px solid #ddd; }
+        .highlight { font-weight: bold; color: #d9534f; }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h2>Experiment 6: String Functions & Regex</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 2nd Year, SIT Nagpur</p>
+    </div>
+
+    <h3>Text Analyzer & Validator</h3>
+    
+    <label for="emailInput">Email Address:</label>
+    <input type="text" id="emailInput" placeholder="Enter email to validate">
+
+    <label for="textInput">Sample Text:</label>
+    <textarea id="textInput" rows="5" placeholder="Enter text containing some numbers..."></textarea>
+
+    <button onclick="processData()">Analyze Content</button>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
