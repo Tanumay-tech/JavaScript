@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 10: JSON Data Rendering</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .btn-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        button { flex: 1; padding: 12px; border: none; border-radius: 4px; cursor: pointer; color: white; font-weight: bold; }
+        .btn-fetch { background-color: #007bff; }
+        .btn-jquery { background-color: #28a745; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; display: none; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .loading { text-align: center; font-style: italic; color: #666; display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="header-card">
+        <h2>Experiment 10: JSON Data via AJAX</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 2nd Year, SIT Nagpur</p>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn-fetch" onclick="loadUsingFetch()">Load via Fetch API</button>
+        <button class="btn-jquery" id="jqBtn">Load via jQuery</button>
+    </div>
+
+    <p class="loading" id="statusMsg">Loading data...</p>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
