@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 12: Real-Time Interactive Web App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 650px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .quote-box { background: #f1f8ff; border-left: 4px solid #007bff; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 15px; }
+        input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; color: white; font-weight: bold; }
+        .btn-primary { background: #007bff; }
+        .btn-success { background: #28a745; }
+        .btn-danger { background: #dc3545; padding: 5px 10px; font-size: 12px; }
+        ul { list-style: none; padding: 0; }
+        li { background: #f8f9fa; padding: 12px; margin-bottom: 8px; border: 1px solid #ddd; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+        li.completed span { text-decoration: line-through; color: #888; }
+        .stats { font-size: 13px; color: #555; margin-top: 10px; text-align: right; }
+    </style>
+</head>
+<body>
+    <div class="header-card">
+        <h2>Experiment 12: Full-Stack Frontend Integration</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 3rd Year, SIT Nagpur</p>
+    </div>
+
+    <div class="quote-box">
+        <p id="quoteText">Click below to fetch a live developer tip via AJAX...</p>
+        <button class="btn-primary" id="fetchQuoteBtn">Fetch Live Tip (AJAX)</button>
+    </div>
+
+    <h3>Persistent Sprint Board</h3>
+    <div class="input-group">
+        <input type="text" id="sprintInput" placeholder="Add sprint task (saved in localStorage)...">
+        <button class="btn-success" id="addSprintBtn">Add</button>
+    </div>
+
+    <ul id="sprintList"></ul>
+    <div class="stats" id="taskStats">Total Tasks: 0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
