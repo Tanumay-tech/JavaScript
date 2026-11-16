@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 11: Timers & ES6 Modules</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 650px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .header-card { background-color: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .clock-box { background: #212529; color: #00ff88; padding: 15px; border-radius: 5px; text-align: center; font-family: monospace; font-size: 24px; margin-bottom: 20px; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
+        input { padding: 10px; border: 1px solid #ccc; border-radius: 4px; flex: 1; min-width: 140px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #0056b3; }
+        .schedule-card { background: #f8f9fa; border-left: 5px solid #007bff; padding: 12px 15px; margin-bottom: 10px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+        .badge { background: #28a745; color: white; padding: 5px 10px; border-radius: 12px; font-size: 13px; font-weight: bold; }
+        .badge.started { background: #dc3545; }
+        #alertBanner { display: none; background: #fff3cd; color: #856404; border: 1px solid #ffeeba; padding: 12px; border-radius: 4px; margin-bottom: 15px; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="header-card">
+        <h2>Experiment 11: Timers & ES6 Modules</h2>
+        <p><strong>Name:</strong> Tanumay Chatterjee | <strong>PRN:</strong> 24070521127</p>
+        <p><strong>Batch:</strong> 2024-2028 | CSE 3rd Year, SIT Nagpur</p>
+    </div>
+
+    <div class="clock-box" id="liveClock">00:00:00</div>
+    <div id="alertBanner"></div>
+
+    <h3>Class Scheduler & Live Countdown</h3>
+    <div class="input-group">
+        <input type="text" id="subjectInput" placeholder="Subject Name (e.g., Data Science)">
+        <input type="number" id="minutesInput" placeholder="Starts in (mins)" min="1" max="120">
+        <button id="addScheduleBtn">Schedule Class</button>
+    </div>
+
+    <div id="scheduleList"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
